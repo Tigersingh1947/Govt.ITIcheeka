@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Developers</title>
+    <style type="text/css">
+
+
+
+
+
+.container
+{
+  max-width: 1000px;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card
+{
+  position: relative;
+  margin: 20px 0;
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 0 20px 20px rgba(0,0,0,.5);
+  transition: 1s;
+}
+.card:hover
+{
+  z-index: 10000;
+  transform: perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+}
+
+.card .Box
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  position: relative;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s cubic-bezier(.15,1.7,.84,.58);
+  background: #111;
+}
+.card .Box img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card:hover .Box
+{
+  transform: rotateY(-135deg);
+}
+.card .details
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  z-index: -1;
+}
+
+
+.button{
+    background-color: #4caf50;
+    border: none;
+    color:  #fff;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+#heading{
+    background: linear-gradient( rgba(7, 138, 7, 0.945) ,rgb(7, 53, 11));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent !important;
+}
+
+
+
+
+
+    </style>
+</head>
+<body style="background-color: antiquewhite;">
+
+    <h1  id="heading"><center><b><i><font size="9">I am The Programmers</font> </i></b></center></h1>
+ <h><a href=" C:\Users\iti98\Desktop\Index\homepage.html"><input type="button" class="button" value="Home"></a></h>
+    <div class="container">
+       
+        <div class="card">
+          <div class="Box">
+            <img src="C:\Users\iti98\Desktop\Index\my 2.jpeg ">
+          </div>
+          <div class="details">
+            <h2>powered by Firoz kumar</h2>
+            <p>Hello, I am web Developers who has strong grip on making website and any type of python and html projects.
+                If you plan to make your websites for your Shop, School, Office, Institute and so on.<br>
+                E-mail: nobody6527@gmail.com
+                <br><br>
+                <button class="button"><a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTUzNTQ5NTQ0MzM2NTIz?story_media_id=3064175742183733420_54655993289&igshid=YmMyMTA2M2Y=">Instagram</a></button>
+            </p>
+          </div>
+        </div>
+        
+
+    
+</body>
+</html>
